@@ -22,7 +22,7 @@ object Messages{
     var messages: MutableLiveData<MutableList<String>> = MutableLiveData(mutableListOf());
     fun addMessage(msg:String){
         val current = messages.value ?: mutableListOf()
-        current.add(msg)
+        current.add(0,msg)
         messages.postValue(current)
     }
 

@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         //udp discovery
         receiveUdpBroadcast();
-        switchFragment(DeviceHomeFrag(),R.id.container);
+        switchFragment(HomeConnectionFrag(),R.id.container);
 
         is_connected.observe(this){
             if (is_connected.value == 1){

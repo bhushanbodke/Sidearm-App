@@ -13,6 +13,7 @@ class MyWebSocketListener : WebSocketListener() {
 
     override fun onMessage(webSocket: WebSocket, text: String) {
         println("Received text: $text")
+        Messages.addMessage(text);
     }
 
     override fun onMessage(webSocket: WebSocket, bytes: ByteString) {

@@ -73,10 +73,11 @@
     <ScrollView
         android:layout_width="match_parent"
         app:layout_constraintTop_toBottomOf="@+id/MsgTitle"
-        android:padding="20dp"
+        android:scrollbars="none"
         android:layout_height="wrap_content">
         <LinearLayout
             android:id="@+id/ReceivedMsg"
+            android:padding="20dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
