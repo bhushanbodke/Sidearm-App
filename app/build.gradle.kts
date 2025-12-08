@@ -61,4 +61,5 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:4.11.0")
     implementation("com.google.android.material:material:1.12.0")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
+    implementation("commons-net:commons-net:3.9.0")
 }

@@ -49,6 +49,11 @@ class DeviceHomeFrag: Fragment(R.layout.home_device_layout){
             (requireActivity() as MainActivity).switchFragment(SendTextFrag(),
                 R.id.container)
         }
+        val shared_folder = view.findViewById<LinearLayout>(R.id.Shared_folder)
+        shared_folder.setOnClickListener {
+            (requireActivity()as MainActivity).switchFragment(FtpFragment(),R.id.container);
+        }
+
     }
 }
 class SendTextFrag: Fragment(R.layout.send_text_layout){

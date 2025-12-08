@@ -4,6 +4,8 @@ import androidx.lifecycle.MutableLiveData
 import okhttp3.WebSocket
 
 data class Device(val name:String, val ip:String);
+
+var connected_device: MutableMap<String,String> = mutableMapOf();
 object AvailableDevice {
     private val _devices = MutableLiveData<MutableMap<String, Device>>(mutableMapOf())
     val devices: MutableLiveData<MutableMap<String, Device>> = _devices

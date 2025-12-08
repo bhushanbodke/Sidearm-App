@@ -25,7 +25,7 @@
         android:background="@drawable/rounded_view"
         app:layout_constraintTop_toBottomOf="@+id/DeviceNameText"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/rightView"
+        app:layout_constraintEnd_toStartOf="@+id/Shared_folder"
         android:layout_marginEnd="10dp" >
 
         <ImageView
@@ -44,14 +44,27 @@
 
     <!-- RIGHT BLOCK -->
     <LinearLayout
-        android:id="@+id/rightView"
+        android:id="@+id/Shared_folder"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:orientation="vertical"
+        android:gravity="center"
         android:layout_marginTop="30dp"
         android:background="@drawable/rounded_view"
         app:layout_constraintTop_toBottomOf="@+id/DeviceNameText"
         app:layout_constraintStart_toEndOf="@+id/Sendtext"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="10dp" />
+        android:layout_marginStart="10dp">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/round_folder_shared_24"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_medium"
+            android:textSize="17dp"
+            android:text="shared folder"/>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,12 @@ class MyWebSocketListener : WebSocketListener() {
 
     override fun onMessage(webSocket: WebSocket, text: String) {
         println("Received text: $text")
+        if (text.split(",")[0] == "ftp"){
+            connected_device["ip"] = text.split(",")[1];
+            connected_device["port"] = text.split(",")[2];
+            connected_device["username"] = text.split(",")[3];
+            connected_device["pass"] = text.split(",")[4];
+        }
         Messages.addMessage(text);
     }
 
